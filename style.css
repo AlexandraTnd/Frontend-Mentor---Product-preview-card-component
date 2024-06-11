@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+section {
+    width: 50vw;
+    background-color: white;
+}
+
+img {
+    height: 50vh;
+}
+
+#details {
+    padding: 20px;
+}
