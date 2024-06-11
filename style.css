@@ -10,12 +10,66 @@ body {
 section {
     width: 50vw;
     background-color: white;
+    flex-direction: row;
 }
 
-img {
+#product-photo {
     height: 50vh;
 }
 
 #details {
     padding: 20px;
+    min-width: 20vh;
+    max-height: 50vh;
+    background-color: white;
+}
+
+h1 {
+    margin-top: 30px;
+    font-family: "Fraunces";
+    font-size: 26px;
+    font-weight: bolder;
+}
+
+p {
+    font-family: "Montserrat";
+    font-size: 14px;
+}
+
+#item-name {
+    color: hsl(228, 12%, 48%);
+}
+
+#newprice {
+    font-family: "Fraunces";
+    font-size: 24px;
+    font-weight: bolder;
+    color: hsl(145, 81%, 21%)
+}
+
+#oldprice {
+    margin-left: 10px;
+    font-family: "Fraunces";
+    font-size: 13px;
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+}
+
+button {
+    background-color: hsl(145, 81%, 21%);
+    color: white;
+    width: 100%;
+    border: none;
+    padding: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+    section {
+        width: 96%;
+        flex-direction: column !important;
+    }
+    #product-photo {
+        content: url('./images/image-product-mobile.jpg');
+        width: 100%;
+    }
 }
